@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build-local": "next build",
+    "build": "next build && next export",
+    "prod": "next build && next prod",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@popperjs/core": "^2.11.0",
+    "axios": "^0.23.0",
+    "bootstrap": "^5.1.3",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.17.4",
+    "react-input-mask": "^2.0.4",
+    "react-redux": "^7.2.6",
+    "react-select": "^5.2.0",
+    "redux": "^4.1.1",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-input-mask": "^3.0.1",
+    "@types/react-redux": "^7.1.19",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.4",
+    "jest-watch-typeahead": "^0.6.1",
+    "lint-staged": "^10.0.10",
+    "prettier": "^2.0.2",
+    "typescript": "^4.1.3"
+  }
+}
