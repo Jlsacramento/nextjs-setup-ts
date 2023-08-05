@@ -11,9 +11,5 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     background: #121214;
     color: #e1e1e6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
 `

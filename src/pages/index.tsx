@@ -14,6 +14,7 @@ export const Proposta = (): JSX.Element => {
         <h1>
           Setup Next JS.
         </h1>
+        <a href="login">Login</a>
       </main>
     </div>
   )

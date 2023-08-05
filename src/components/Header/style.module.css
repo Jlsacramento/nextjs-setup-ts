@@ -1,0 +1,22 @@
+.header {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 81px;
+}
+
+.nav_bar {
+    padding: 0.5rem;
+    background-color: transparent !important;
+}
+
+.ml_auto {
+    margin-left: auto;
+}
+
+.brand {
+    display: flex;
+    padding: 0;
+}

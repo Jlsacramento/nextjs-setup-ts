@@ -1,0 +1,21 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.heigth_without_footer {
+    height: calc(100% - 35px);
+}
+
+.bg_primary {
+    background-color: #B00000;
+}
+
+.bg_image {
+    background-image: url("../../../public/assets/images/bg-forno-lenha.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

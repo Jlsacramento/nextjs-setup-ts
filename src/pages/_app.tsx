@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { useEffect } from "react";
 
 import store from '../store'
+import { AuthProvider } from '../contexts/AuthContext';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   useEffect(() => {
@@ -13,8 +14,10 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   
   return (
     <Provider store={store}>
-      <Component {...pageProps} />
-      <GlogalStyle />
+      <AuthProvider>
+        <Component {...pageProps} />
+        <GlogalStyle />
+      </AuthProvider>
     </Provider>
   )
 }

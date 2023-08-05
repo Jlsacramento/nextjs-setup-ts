@@ -1,0 +1,17 @@
+.footer {
+    background-color: #fff;
+    color: #212529;
+}
+
+.text {
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    padding: 5.5px 0 5.5px 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #212529;
+    font-weight: bold;
+}

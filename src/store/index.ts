@@ -1,7 +1,8 @@
-import { createStore, combineReducers } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
+import user from './ducks/user'
 
-const reducer = combineReducers({});
-
-const store = createStore(reducer)
-
-export default store
+export default configureStore({
+    reducer: {
+        user
+    }
+})
